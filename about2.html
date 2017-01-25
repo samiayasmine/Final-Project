@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Homemade+Apple|Kaushan+Script|Special+Elite|VT323|Yellowtail" rel="stylesheet"> 
+	<style type="text/css">
+		#blurb {
+			width: 400px;			
+			font-family: "Alegreya SC", cursive;
+			font-size: 22px;
+			color: white;
+			border: 1px solid black;
+			flex: 1;
+			padding: 50px;
+			}	
+		#contain {
+			position: fixed;
+			width: 1440px;
+			background-color: black;
+			display: flex;
+			margin-top: 80px;
+			margin-bottom: 80px;
+
+		}
+		#show {
+			transition: ease-in;
+			height: 675px;
+			transition-duration: 1s;
+			border: 1px solid black;
+		}
+		.table {
+			width: 720px;
+			height: 100%;
+			flex: 1;
+			opacity: .9;
+			border-radius: 25%;
+
+		}
+		span {
+			font-size: 28px;
+			font-style: italic;
+			font-style: bold;
+			color: #AD0E00;
+		}
+
+	</style>
+</head>
+<header id="header">
+
+<a href="home2.html">
+<img src="crown.gif" class="crowngif">
+</a>
+<ul>
+        <li><a href="home2.html" class="anchors">Home</a></li>
+        <li><a href="about2.html" class="anchors">About</a></li>
+        <li class= "dropdown"><a class="anchors" id="dropbtn" href="#availnow">#TheCrownVictoria</a>
+        <div class= "content">
+            <a class="anchors" href="TheCrownVicA.html">Side A</a>
+            <a class="anchors" href="TheCrownVicb2.html">Side B</a>
+        </div>
+        </li>
+        <li><a href="music.html" class="anchors">Music</a></li>
+        <li><a href="vids.html" class="anchors">Videos</a></li>
+        <li><a href="contact.html" class="anchors">Contact</a></li>
+</ul>
+
+</header>
+<body>
+<div id="contain">
+
+	<div id="show">
+
+
+		<img class="table" src="luey.jpg">
+		<img class="table" src="prof2.jpg">
+		<img class="table" src="prof.jpg">
+		<img class="table" src="insta.jpg">
+		<img class="table" src="studio.jpg">
+		<img class="table" src="cv cover.jpg">
+		<img class="table" src="luey1.jpg">
+		<img class="table" src="animated.jpg">
+		<img class="table" src="cv2.jpg">
+
+	</div>
+
+	<div id="blurb">
+	
+			Park Slope, 17th Street And 4th Ave Is The Area I Could Call Home, Out Of All The Places I've Lived. By The Time I Was 18,  I'd Lived In Four Different States Along The East Coast. I Attended Three Different High Schools In That Short Time. I've Been Through A Lot. Music Has Been The Most Consistent Thing In My Life. When I Got Arrested, Music Was There. When I Was Sleeping On Cement Floors, Music Was There. When I Was Hungry, Music Was There. Through Gun Shots, Court Cases, Fist Fights, Tears, And Everything Else.. Music Has Been There. I Create To Help Others Who Have Been Through Or Are Going Through Tough Situations. My Name Is <span> Luey Northern </span>... I'm Here To Help.
+			
+	</div>	
+
+</div>
+
+
+<script type="text/javascript">
+			var slideIndex = 0;	
+			cycle();
+
+			function cycle() {
+				var i;
+				var x = document.getElementsByClassName("table");
+
+					for (i = 0; i < x.length; i ++) {
+						x[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > x.length) {slideIndex = 1};
+					x[slideIndex-1].style.display = "block";
+					setTimeout(cycle, 5000);
+			} 
+			</script>
+			
+</body>
+<footer>
+
+	<a href="https://www.facebook.com/Luey-Northern-266188430387886/"><img class= "social" src="smfacebooksquare.png" alt="facebook"></a>
+	<a href="https://www.instagram.com/lueynorthern/"><img class= "social" src="sminstagramsquare.png" alt="instagram"></a>
+	<a href="https://soundcloud.com/lueynorthern"><img class= "social" src="smsoundcloudsquare.png" alt="soundcloud"></a>
+	 <a href="contact.html"><img class= "social" src="smmailsquare.png" alt="mail"></a>
+
+	
+</footer>
+</html>

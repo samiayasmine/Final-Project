@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Luey Northern</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Special+Elite|VT323" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
+	<style type="text/css">
+	#land {
+		width: 100%;
+		height: 860px;
+		/*position: relative; I left the original styling attempt for my animationto show what the first attempt looked like. I played with it from there but didnt want to clutter my code.*/
+	}
+	h1 {
+		font-family: 'Rock Salt', cursive;
+		text-decoration: none;
+		color: black;
+	}
+	#banna {
+		position: relative;
+		width: 100%;
+		height: 860px;
+	}
+	body {
+		height: 1800px; 
+		margin: 0;
+		background: url(animated.jpg);
+		z-index: -1;
+
+	}
+	#homecontent {
+		margin-left: 100px;
+	}
+
+	.homeimgs {
+		display: inline;
+	}
+	#homevids {
+		display: flex;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.homeimgs1 {
+		flex: 1;
+	}
+	#uno, #dos {
+		font-family: 'Rock Salt', cursive;
+		/*position: absolute;*/
+	}
+	</style>
+</head>
+<body>
+
+<header id="header">
+
+<a href="home2.html">
+<img src="crown.gif" onclick="Move()" class="crowngif">
+</a>
+<ul>
+        <li><a href="home2.html" class="anchors">Home</a></li>
+        <li><a href="about2.html" class="anchors">About</a></li>
+        <li class= "dropdown"><a class="anchors" id="dropbtn" href="#availnow">#TheCrownVictoria</a>
+        <div class= "content">
+            <a class="anchors" href="TheCrownVicA.html">Side A</a>
+            <a class="anchors" href="TheCrownVicb2.html">Side B</a>
+        </div>
+        </li>
+        <li><a href="music.html" class="anchors">Music</a></li>
+        <li><a href="vids.html" class="anchors">Videos</a></li>
+        <li><a href="contact.html" class="anchors">Contact</a></li>
+</ul>
+
+</header>
+
+
+
+
+<div id="mycontainer">
+
+<div id="land">
+
+<div id="uno">Luey</div>
+<div id="dos">Northern</div>
+<img src="banner1.png" id="banna">
+
+</div>
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="homecontent">
+
+<div id="availnow">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1> Available Now!</h1>
+	<a href="TheCrownVicA.html">
+	<h1> Side A </h1>	
+		<img src="cv cover.jpg" class="homeimgs" style="width: 250px; height: 250px;">
+	</a>
+	
+	<a href="TheCrownVicb2.html">	
+	<h1> Side B </h1>
+		<img src="cv2.jpg" class="homeimgs" style="width: 250px; height: 250px;">
+	</a>
+
+</div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="homevids">
+	<div class="homeimgs1">
+				<center>
+			<h1> Interview </h1>
+				<iframe width="410" height="315" src="https://www.youtube.com/embed/PKKT57ZK9xE" frameborder="0" allowfullscreen></iframe>
+				</center>
+	</div>
+	<div class="homeimgs1">
+				<center>
+			<h1> Recent Daily Dose </h1>
+				<iframe width="410" height="315" src="https://www.youtube.com/embed/ETpZHlEhKCY" frameborder="10" allowfullscreen></iframe>
+				</center>
+	</div>
+	<div class="homeimgs1">
+				<center>
+			<h1> Latest Music Video </h1>
+				<iframe width="410" height="315" src="https://www.youtube.com/embed/7yUz-jI6sDo" frameborder="0" allowfullscreen></iframe>
+				</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--I gave my page alot of br tags to save me the trouble of pixelating a placeholder to create space between my content. I did this to show a clearer view of the background image and frame the video section in a way that would clearly fit the background with the videos lined up in the center. 
+-->
+</div>
+
+<!-- <script type="text/javascript">
+	function Move() {
+		var elem = document.getElementById("uno");
+		var pos = -200;
+		var id = setInterval(frame, 5);
+
+	function frame() {
+		if (pos == 650) {
+			clearInterval(id);
+		} else {
+			pos++;
+			elem.style.left = pos + 'px';
+			elem.style.top = pos + 'px';
+			
+		}
+	}
+}
+</script> 
+//I couldnt get my animation to work. It was supposed to grab the div id'ed as "uno" and move it from off the page to the middle, but closer toward the left, bottom corner. However, in playing with the different types of positions to give it the ability to move, I found that I liked it as a backdrop for the logo that would only show on the landing, so I kept it as is. -->
+
+</body>
+<footer>
+
+	<a href="https://www.facebook.com/Luey-Northern-266188430387886/"><img class= "social" src="smfacebooksquare.png" alt="facebook" "></a>
+	<a href="https://www.instagram.com/lueynorthern/"><img class= "social" src="sminstagramsquare.png" alt="instagram"></a>
+	<a href="https://soundcloud.com/lueynorthern"><img class= "social" src="smsoundcloudsquare.png" alt="soundcloud"></a>
+	 <a href="contact.html"><img class= "social" src="smmailsquare.png" alt="mail"></a>
+
+</footer>
+
+</html>

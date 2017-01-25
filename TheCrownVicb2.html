@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Homemade+Apple|Kaushan+Script|Special+Elite|VT323|Yellowtail" rel="stylesheet"> 
+	<style type="text/css">
+		.sideone, .sidetwo {
+			flex: 1;
+		}
+		.rec {
+			width: 55%;
+			height: 100%;
+			flex: 1;
+			margin-top: 80px;
+		}
+		.contain {
+			display: flex;
+			background: url(mahogany.jpg);
+			background-size: contain;
+			padding-bottom: 100px;
+			
+		}
+		#tracklist {
+			background: url(metal.jpg);
+			display: flex;
+			margin-top: 50%;
+			width: 60%;
+			border-radius: 10%;
+			padding: 5px;
+			border-width: 20px;
+			border: solid;
+			border-color: #AB8D3F;
+		}
+		button {
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			background: url(play.png);
+			background-size: cover;
+		}
+		#spin {
+			border-radius: 100%;
+			background: url(vinyl.jpg);
+			width: 631px;
+			height: 631px; 
+		}
+		#contain1 {
+			margin-top: 50%;
+			background: url(mahogany.jpg);
+			width: 45%;
+			height: 100%;
+			
+		}
+		.spin {
+		    background: #f00;
+		    -moz-animation-name: spin;
+		    -moz-animation-duration: 4000ms;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-timing-function: linear;
+		    animation-name: spin;
+		    animation-duration: 4000ms;
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		}
+		
+		@-moz-keyframes spin {
+		    from { -moz-transform: rotate(0deg); }
+		    to { -moz-transform: rotate(360deg); }
+		}
+		
+		@keyframes spin {
+		    from {
+		        transform:rotate(0deg);
+		    }
+		    to {
+		        transform:rotate(360deg);
+		    }
+		}
+	</style>
+</head>
+<header id="header">
+
+<a href="home2.html">
+<img src="crown.gif" class="crowngif">
+</a>
+<ul>
+        <li><a href="home2.html" class="anchors">Home</a></li>
+        <li><a href="about2.html" class="anchors">About</a></li>
+        <li class= "dropdown"><a class="anchors" id="dropbtn" href="#availnow">#TheCrownVictoria</a>
+        <div class= "content">
+            <a class="anchors" href="TheCrownVicA.html">Side A</a>
+            <a class="anchors" href="TheCrownVicb2.html">Side B</a>
+        </div>
+        </li>
+        <li><a href="music.html" class="anchors">Music</a></li>
+        <li><a href="vids.html" class="anchors">Videos</a></li>
+        <li><a href="contact.html" class="anchors">Contact</a></li>
+</ul>
+
+</header>
+<body>
+
+<div class="contain">
+<div class="rec">
+<img src="arm.png" style="position: absolute; width: 250px; height: 250px; z-index: 3; margin-left: 40%; margin-top: 50px; transform: rotate(-40deg);">
+<center>
+<div id="spin" class="spin">
+
+<img src="cv2.jpg" class="homeimgs" style="width: 275px; height: 275px; border-radius: 100%; border-width: 20px; padding: 175px; border: solid;">
+</div>
+	<div id="playa">
+	<audio id="player" controls autoplay>
+  		<source src="" id="playatrack" type="audio/mp3">
+  	</audio>
+  	</div>
+</center>
+</div>
+<div id="contain1">
+<div id="tracklist">
+	<div class="sideone">
+   
+	<button onclick='loadSong("01 Intro (Victoria)")'> 
+    </button> 
+    
+        <div class="songs"> 01 - Intro (Victoria) </div>
+
+<br>
+  	<button onclick='loadSong("02 Valour & Fear")'>	
+  	</button> 
+
+  		<div class="songs"> 02 - Valour + Fear </div>
+<br> 
+    <button onclick='loadSong("03 Introspective Reasoning")'>	
+    </button> 
+
+    	<div class="songs"> 03 - Introspective Reasoning </div>
+<br> 
+    <button onclick='loadSong("04 Conspiracy Theories")'>
+    </button> 
+    
+    	<div class="songs"> 04 - Conspiracy Theories </div>
+<br> 
+    <button onclick='loadSong("05 The Other Side (Ft. Deante Hitchc")'>
+    </button> 
+    
+    	<div class="songs"> 05 - The Other Side (Ft. Deante Hitchc </div>
+
+	</div>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+	function loadSong(songTitle){
+    
+    var audioPlayer = document.getElementById('player');
+    var player=document.getElementById('playatrack');
+    var sourceMp3=document.getElementById('playatrack');
+    
+    var songSrc = songTitle + '.mp3';
+    console.log(songSrc);
+    sourceMp3.src = songSrc;
+    console.log(player);
+    //used console.log to test if the vars were pulling the right tags and inserting them in the function.
+    //
+    
+   audioPlayer.load();
+   audioPlayer.play();
+}
+</script>
+</body>
+<footer>
+
+	<a href="https://www.facebook.com/Luey-Northern-266188430387886/"><img class= "social" src="smfacebooksquare.png" alt="facebook" "></a>
+	<a href="https://www.instagram.com/lueynorthern/"><img class= "social" src="sminstagramsquare.png" alt="instagram"></a>
+	<a href="https://soundcloud.com/lueynorthern"><img class= "social" src="smsoundcloudsquare.png" alt="soundcloud"></a>
+	 <a href="contact.html"><img class= "social" src="smmailsquare.png" alt="mail"></a>
+
+</footer>
+</html>

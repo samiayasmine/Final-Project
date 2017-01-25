@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	 <!-- I chose not to site the font family external sheet with the multiple fonts here because I knew I wouldn't use them. Again I also used break tags to break up my form. --> 
+	<style type="text/css">
+		form {
+			margin-top: 20%;
+		}
+		body {
+			background: url(animated.jpg);
+			z-index: -1;
+			font-family: 'Rock Salt', cursive;
+		}
+	</style>
+</head>
+<header id="header">
+
+<a href="home2.html">
+<img src="crown.gif" class="crowngif">
+</a>
+<ul>
+        <li><a href="home2.html" class="anchors">Home</a></li>
+        <li><a href="about2.html" class="anchors">About</a></li>
+        <li class= "dropdown"><a class="anchors" id="dropbtn" href="#availnow">#TheCrownVictoria</a>
+        <div class= "content">
+            <a class="anchors" href="TheCrownVicA.html">Side A</a>
+            <a class="anchors" href="TheCrownVicb2.html">Side B</a>
+        </div>
+        </li>
+        <li><a href="music.html" class="anchors">Music</a></li>
+        <li><a href="vids.html" class="anchors">Videos</a></li>
+        <li><a href="contact.html" class="anchors">Contact</a></li>
+</ul>
+
+</header>
+<body>
+<center>
+<form>
+<b>
+Email:
+</b>
+<br>
+<br>
+	<input type="field" name="email" width="">*
+<br>
+<br>
+<br>
+<b>
+	Please Include Your Name + A Brief Message
+<br> and We'll Make Sure To Get Back To You ASAP; 
+<br>Thank you... And Have A Great AirForce Day.
+</b>
+<br>
+<br>
+	<input type="field" name="message">**
+<br>
+<br>
+	<input id="ohno" type="button" onclick="uhoh()" value="GO" name="submit">
+
+</form>
+</center>
+
+	 <script type="text/javascript">
+	 	function uhoh(){
+	 		window.alert("Do Not Disturb. Just Buy The Album.");
+
+	 	}
+	 	//I used a window alert to deter contact points because we havent learned how to back up the contact forms with a secured backend, otherwise I would have made this operational.
+	 </script>
+</body>
+<footer>
+
+	<a href="https://www.facebook.com/Luey-Northern-266188430387886/"><img class= "social" src="smfacebooksquare.png" alt="facebook"></a>
+	<a href="https://www.instagram.com/lueynorthern/"><img class= "social" src="sminstagramsquare.png" alt="instagram"></a>
+	<a href="https://soundcloud.com/lueynorthern"><img class= "social" src="smsoundcloudsquare.png" alt="soundcloud"></a>
+	 <a href="contact.html"><img class= "social" src="smmailsquare.png" alt="mail"></a>
+
+	
+</footer>
+</html>
